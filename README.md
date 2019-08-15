@@ -11,6 +11,11 @@ To run the experiments in the SHRDLURN blocks environment, use this command:
 ```
 python3 evaluate.py --dataset stacks --pretrain_prefix "stacks_model_"
 ```
+This will run the full model, including discrete representations and the encoder matching loss.
+To run without the model improvements, use:
+```
+python3 evaluate.py --dataset stacks --pretrain_prefix "stacks_model_" --continuous_message --model_message_loss_weight 0.0
+```
 Additional flags are defined at the top of the relevant python files.
 
 To run a baseline model with no pre-training, use:

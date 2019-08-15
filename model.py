@@ -15,7 +15,7 @@ import util
 
 from absl import flags
 FLAGS = flags.FLAGS
-flags.DEFINE_float('model_message_loss_weight', 0.0, 'message loss weight')
+flags.DEFINE_float('model_message_loss_weight', 0.01, 'message loss weight')
 flags.DEFINE_integer('model_max_updates', 50, 'max updates')
 flags.DEFINE_integer('model_batch_size', 1, 'batch size')
 flags.DEFINE_bool('model_train_decoder', False, 'allow decoder to change during language learning')
